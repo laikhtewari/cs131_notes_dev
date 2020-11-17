@@ -24,8 +24,8 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: /cs131_notes_dev # the subpath of your site, e.g. /blog
 
 ########### ONLY CHANGE THESE FIELDS
-# replace with your own email for build notifications or leave it blank
-url: "https://anarcomey.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+email: ltewari@stanford.edu # replace with your own email for build notifications or leave it blank
+url: "https://laikhtewari.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 ###########
 
 # Theme-specific
