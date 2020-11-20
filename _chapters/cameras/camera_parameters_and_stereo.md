@@ -37,7 +37,7 @@ Table of Contents
 
 **Shading.** Different shadows and shading can give you information on the geometry of an object. You can also get more information about an object if you have images of it in different lighting conditions. Look at these drawings for example.
 
-![../../assets/images/Untitled.png](../../assets/images/Untitled.png)
+![https://s3.us-west-2.amazonaws.com/secure.notion-static.com/3c078306-386c-4208-8eea-caf9a3ba1c50/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20201120%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20201120T060116Z&X-Amz-Expires=86400&X-Amz-Signature=c175a3c6d21eb1eb3790aaa5434cc6a5eba35bd08c67e704eaf1c3aa46afcf7b&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/3c078306-386c-4208-8eea-caf9a3ba1c50/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20201120%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20201120T060116Z&X-Amz-Expires=86400&X-Amz-Signature=c175a3c6d21eb1eb3790aaa5434cc6a5eba35bd08c67e704eaf1c3aa46afcf7b&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
 
 [https://www.math.brown.edu/~banchoff/DrawingTutorial/3dshading.html](https://www.math.brown.edu/~banchoff/DrawingTutorial/3dshading.html)
 
