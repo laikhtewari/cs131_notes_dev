@@ -27,7 +27,7 @@ Table of Contents
     - [Effect of Window Size](#effect-of-window-size)
 	- [Limitations of Similarity Constraint](#limitations-of-similarity-constraint)
     - [Results with Window Search](#results-with-window-search)
-	- [The Role of Baseline](#the-role-of-baseline)
+	- [The Role of the Baseline](#the-role-of-the-baseline)
 
 # Stereo Vision
 
