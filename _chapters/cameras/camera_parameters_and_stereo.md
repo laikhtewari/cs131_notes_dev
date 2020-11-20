@@ -37,7 +37,7 @@ Table of Contents
 
 **Shading.** Different shadows and shading can give you information on the geometry of an object. You can also get more information about an object if you have images of it in different lighting conditions. Look at these drawings for example.
 
-![Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/Untitled.png](Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/Untitled.png)
+![../../assets/images/Untitled.png](../../assets/images/Untitled.png)
 
 [https://www.math.brown.edu/~banchoff/DrawingTutorial/3dshading.html](https://www.math.brown.edu/~banchoff/DrawingTutorial/3dshading.html)
 
@@ -47,17 +47,17 @@ We can see that the light source is directly on top of all of them, this makes t
 
 Lets say we have the following basic checkerboard texture used for debugging
 
-![Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/Untitled%201.png](Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/Untitled%201.png)
+![../../assets/images/Untitled%201.png](../../assets/images/Untitled%201.png)
 
 And our 2D image looks something like this
 
-![Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/Untitled%202.png](Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/Untitled%202.png)
+![../../assets/images/Untitled%202.png](../../assets/images/Untitled%202.png)
 
 We can map different points of the texture to the image and find a transformation matrix to transform the 2d image values into 3d values.
 
 **Focus.** Every camera with a lens has a certain depth of view, meaning objects within that depth of view will appear in focus and the further away an object is from that depth of view, the blurrier it gets. Here is an image from the lecture slides that illustrates this very well.
 
-![Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/Untitled%203.png](Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/Untitled%203.png)
+![../../assets/images/Untitled%203.png](../../assets/images/Untitled%203.png)
 
 Most camera lenses can change its focal length, giving us results like the one above. Changing the focal point to the plants position makes anything as close as the plant razor sharp and everything else progressively blurrier. The same is true if we change the focal length to where the building is. If we can somehow calculate a numeric value for how blurry a pixel is, we can find out the relative z-distances between each pixel.
 
@@ -77,13 +77,13 @@ The more features we add on the the higher chance of getting a good quality mode
 
 The Stereo problem has a lot of biological motivation as most humans have 2 eyes and have to infer depth from two images at a time. Using convergence
 
-![Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/Untitled%204.png](Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/Untitled%204.png)
+![../../assets/images/Untitled%204.png](../../assets/images/Untitled%204.png)
 
 Interesting fact, according to [this](https://www.dukehealth.org/blog/learning-live-one-eye#:~:text=%E2%80%9CSome%20people%20assume%20that%20if,if%20you%20have%20two%20eyes.&text=But%20studies%20have%20shown%20that,distances%2C%20and%20to%20perceive%20depth.) article by duke health, people who lose sight in one eye have a significant decline in their ability to judge distances and perceive depth. The ability to perceive depth is not completely lost because there are a number of other visual cues that can be used to perceive depth in addition to the knowing the different sizes of objects by memory.
 
 with 2 eyes you can also create the illusion of depth with things like magic eye pictures where you move your face very close to the screen focusing on one point and then moving back until you see depth in the picture, try it out!
 
-![Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/Untitled%205.png](Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/Untitled%205.png)
+![../../assets/images/Untitled%205.png](../../assets/images/Untitled%205.png)
 
 # Epipolar Geometry
 
@@ -109,7 +109,7 @@ Now let's look into simple examples of parallel images and see how they can be u
 
 ### Simplest Case: Parallel Images
 
-![Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/parallel.png](Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/parallel.png)
+![../../assets/images/parallel.png](../../assets/images/parallel.png)
 
 By assuming that 
 
@@ -121,7 +121,7 @@ We can deduce that epipolar lines fall along the horizontal scanlines of the ima
 
 ### **Essential Matrix for Parallel Images:**
 
-![Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/parallel_2.png](Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/parallel_2.png)
+![../../assets/images/parallel_2.png](../../assets/images/parallel_2.png)
 
 Epipolar constraint: 
 
@@ -145,7 +145,7 @@ Therefore, the y-coordinates of corresponding points are the same.
 
 ### Triangulation - Depth from Disparity
 
-![Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/disparity.png](Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/disparity.png)
+![../../assets/images/disparity.png](../../assets/images/disparity.png)
 
 Assume we have already gotten the correspondences between p and p', then we can compute the depth of the point P from disparity. 
 
@@ -157,7 +157,7 @@ As we can see from the equation, disparity is inversely proportional to depth.
 
 ### Stereo Image Rectification
 
-![Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/rect.png](Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/rect.png)
+![../../assets/images/rect.png](../../assets/images/rect.png)
 
 **Algorithm:** 
 
@@ -169,19 +169,19 @@ As we can see from the equation, disparity is inversely proportional to depth.
 
 **Rectification Example**
 
-![Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/example.png](Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/example.png)
+![../../assets/images/example.png](../../assets/images/example.png)
 
 In this example, after rectifying the upper two images, we get two images which are horizontally aligned with each other. 
 
 **Application: View Morphing**
 
-![Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/morph.png](Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/morph.png)
+![../../assets/images/morph.png](../../assets/images/morph.png)
 
 The rectification method can be used for View Morphing. As shown in the above example, if we have same objects from two different viewpoints, we can rectify them to get a synthesized morphed view of how the object looks like. 
 
 **Removing Perspective Distortion** 
 
-![Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/last.png](Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/last.png)
+![../../assets/images/last.png](../../assets/images/last.png)
 
 We can also use rectification to remove perspective distortion. For example, in the above image, we see that lines in the upper image are not parallel to each other. We can use rectification to transform the upper image to the lower image. 
 
@@ -193,7 +193,7 @@ One thing to note is that after rectification, we see that the Michigan sign is 
 
 Here is an example: 
 
-![Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/18.4.01.png](Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/18.4.01.png)
+![../../assets/images/18.4.01.png](../../assets/images/18.4.01.png)
 
 In the above diagram, there are multiple points from the left image as well as the right image. The different colors of dots at the intersection indicate different hypotheses of the alignments of these points. Our goal in this section is to find the matching points between two images from these multiple hypotheses. 
 
@@ -201,7 +201,7 @@ In the above diagram, there are multiple points from the left image as well as t
 
 We will use an example of two images of Abraham Lincoln to demonstrate the basic stereo matching algorithm. 
 
-![Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/18.4.02.png](Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/18.4.02.png)
+![../../assets/images/18.4.02.png](../../assets/images/18.4.02.png)
 
 **The Basic Algorithm:** 
 
@@ -216,7 +216,7 @@ Take the pixel in the yellow square of the first image (left) as an example,
 
 The simplest case would be when the epipolar lines are horizontal scanlines. We can rectify the two stereo images to transform epipolar lines into scanlines, as shown below. 
 
-![Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/18.4.03.png](Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/18.4.03.png)
+![../../assets/images/18.4.03.png](../../assets/images/18.4.03.png)
 
 In this case, the algorithm would be： 
 
@@ -236,7 +236,7 @@ Before we dive into how to pick the best match, let's first make some assumption
 
 - Also, matching regions are similar in visual appearance.
 
-    ![Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/18.4.04.png](Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/18.4.04.png)
+    ![../../assets/images/18.4.04.png](../../assets/images/18.4.04.png)
 
     In the example of two images of Abraham Lincoln, two yellow dots indicate the matching   points, and they both have the same unique texture of a collar. 
 
@@ -248,7 +248,7 @@ If we assume that the matching points are similar in visual appearance, then we 
 
 Here is an example: 
 
-![Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/18.4.05.png](Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/18.4.05.png)
+![../../assets/images/18.4.05.png](../../assets/images/18.4.05.png)
 
 Assume that a point is in the red square of the left image, then we can find a scanline in the right image. For every pixel in the scanline, we can slide a window along the right scanline and compare contents of that window with the reference window in the left image. We can match them using different features such as SSD (sum of squared distance) and normalized correlation. 
 
@@ -256,9 +256,9 @@ Since we have assumed that the matching points are similar in visual appearance,
 
 Therefore, after computing matching costs of the content of the reference window with that of the sliding window, we can complete the correspondence search by finding the lowest value of the SSD or highest value of the normalized correlation, as shown in the diagrams below. 
 
-![Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/18.4.06.png](Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/18.4.06.png)
+![../../assets/images/18.4.06.png](../../assets/images/18.4.06.png)
 
-![Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/18.4.07.png](Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/18.4.07.png)
+![../../assets/images/18.4.07.png](../../assets/images/18.4.07.png)
 
 ### Effect of Window Size
 
@@ -280,13 +280,13 @@ In the similarity constraint, we assume that corresponding regions in two images
 
 **Textureless surfaces**
 
-![Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/textureless.png](Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/textureless.png)
+![../../assets/images/textureless.png](../../assets/images/textureless.png)
 
 When the surface is textureless, the backgrounds of the two images consist of mostly pure colors. Then we won't be able to find the best matches given that a lot of points in the scanline can be similar to each other and to the reference point. 
 
 **Occlusions, repetitions**
 
-![Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/occlusion.png](Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/occlusion.png)
+![../../assets/images/occlusion.png](../../assets/images/occlusion.png)
 
 If the images contain repetition of objects, textures or structures, then we might find multiple high correlated areas and we don't know which point is the right matching point. 
 
@@ -294,13 +294,13 @@ If there's occlusion in the images, the similarity constraint is broken and obje
 
 **Specular surfaces**
 
-![Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/specular.png](Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/specular.png)
+![../../assets/images/specular.png](../../assets/images/specular.png)
 
 If there're specular surfaces in the images, then with a different viewpoint, certain parts of the specular surfaces can be much brighter and no longer similar to the their matching points. The rightmost image above is the result from such disparity because of the specular regions. 
 
 ### Results with Window Search
 
-![Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/result.png](Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/result.png)
+![../../assets/images/result.png](../../assets/images/result.png)
 
 The bottom left image is the result from window-based matching and the bottom right image shows the ground truth. 
 
@@ -310,19 +310,19 @@ You can take CS231a to learn more (and better) methods such as graph cuts to sol
 
 **Small Baseline**
 
-![Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/small.png](Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/small.png)
+![../../assets/images/small.png](../../assets/images/small.png)
 
 - We have been assuming a smaller baseline, because we will be able to see more shared points in both views and visual appearance will be similar.
 - However, smaller baselines give us less information about depth and can lead to large depth error.
 
 **Large Baseline**
 
-![Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/large.png](Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/large.png)
+![../../assets/images/large.png](../../assets/images/large.png)
 
 - Large baselines can make the search problem difficult, because a point in one image may not appear in the other, and even if it appears, the appearance might be quite different in the two views.
 - Another related issue for wide baselines is **foreshortening**.
 
-![Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/problem.png](Lecture%2018%20Notes%20124311af76f64e8ab37be081b7d82ce8/problem.png)
+![../../assets/images/problem.png](../../assets/images/problem.png)
 
 As we can see in the above diagram, line l is the projection of line L from O and line l' is the project of line L from O'. Line l' is much shorter than line l and matching with fixed-size windows will fail in this case. 
 
