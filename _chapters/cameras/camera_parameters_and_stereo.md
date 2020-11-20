@@ -8,26 +8,27 @@ order: 18 # Lecture number for 2020
 
 Table of Contents
 
-1. Stereo Vision
-    1. Visual Cues for 3D
-    2. Stereo Reconstruction
-2. Epipolar Geometry
-    1. Introduction
-    2. Transformation matrices
-3. Parallel Images and Image Rectification
-    1. Simplest Case: Parallel Images
-    2. Essential Matrix for Parallel Images
-    3. Triangulation: Depth from Disparity
-    4. Stereo Image Rectification
-    5. Rectification Example and Application
-4. Solving the Correspondence Problem
-    1. Basic Stereo Matching Algorithm
-    2. Correspondence Problem
-    3. Correspondence Search with Similarity Constraint
-    4. Effect of Window Size
-    5. Limitations of Similarity Constraint
-    6. Results with Window Search
-    7. The Role of Baseline
+- [Stereo Vision](#stereo-vision)
+	- [Visual Cues for 3D](#visual-cues-for-3d)
+	- [Stereo Reconstruction](#stereo-reconstruction)
+	- [Subtopic 1-3](#subtopic-1-3)
+- [Epipolar Geometry](#Epipolar-Geometry)
+    - [Introduction](#Introduction)
+	- [Transformation matrices](#Transformation-matrices)
+- [Parallel Images and Image Rectification](#Parallel-Images-and-Image-Rectification)
+	- [Simplest Case: Parallel Images](#Simplest-Case-Parallel-Images)
+	- [Essential Matrix for Parallel Images](#Essential-Matrix-for-Parallel-Images)
+	- [Triangulation: Depth from Disparity](#Triangulation-Depth-from-Disparity)
+    - [Stereo Image Rectification](#Stereo-Image-Rectification)
+	- [Rectification Example and Application](#Rectification-Example-and-Application)
+- [Solving the Correspondence Problem](#Solving-the-Correspondence-Problem)
+	- [Basic Stereo Matching Algorithm](#Basic-Stereo-Matching-Algorithm)
+	- [Correspondence Problem](#Correspondence-Problem)
+	- [Correspondence Search with Similarity Constraint](#Correspondence-Search-with-Similarity-Constraint)
+    - [Effect of Window Size](#Effect-of-Window-Size)
+	- [Limitations of Similarity Constraint](#Limitations-of-Similarity-Constraint)
+    - [Results with Window Search](#Results-with-Window-Search)
+	- [The Role of Baseline](#The-Role-of-Baseline)
 
 # Stereo Vision
 
