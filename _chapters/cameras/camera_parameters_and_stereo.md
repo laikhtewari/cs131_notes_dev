@@ -47,17 +47,17 @@ We can see that the light source is directly on top of all of them, this makes t
 
 Lets say we have the following basic checkerboard texture used for debugging
 
-![../../assets/images/Untitled%201.png](../../assets/images/Untitled%201.png)
+![https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Checkerboard_pattern.svg/1024px-Checkerboard_pattern.svg.png](https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Checkerboard_pattern.svg/1024px-Checkerboard_pattern.svg.png)
 
 And our 2D image looks something like this
 
-![../../assets/images/Untitled%202.png](../../assets/images/Untitled%202.png)
+![../../assets/images/Untitled%201.png](../../assets/images/Untitled%201.png)
 
 We can map different points of the texture to the image and find a transformation matrix to transform the 2d image values into 3d values.
 
 **Focus.** Every camera with a lens has a certain depth of view, meaning objects within that depth of view will appear in focus and the further away an object is from that depth of view, the blurrier it gets. Here is an image from the lecture slides that illustrates this very well.
 
-![../../assets/images/Untitled%203.png](../../assets/images/Untitled%203.png)
+![../../assets/images/Untitled%202.png](../../assets/images/Untitled%202.png)
 
 Most camera lenses can change its focal length, giving us results like the one above. Changing the focal point to the plants position makes anything as close as the plant razor sharp and everything else progressively blurrier. The same is true if we change the focal length to where the building is. If we can somehow calculate a numeric value for how blurry a pixel is, we can find out the relative z-distances between each pixel.
 
@@ -77,13 +77,13 @@ The more features we add on the the higher chance of getting a good quality mode
 
 The Stereo problem has a lot of biological motivation as most humans have 2 eyes and have to infer depth from two images at a time. Using convergence
 
-![../../assets/images/Untitled%204.png](../../assets/images/Untitled%204.png)
+![../../assets/images/Untitled%203.png](../../assets/images/Untitled%203.png)
 
 Interesting fact, according to [this](https://www.dukehealth.org/blog/learning-live-one-eye#:~:text=%E2%80%9CSome%20people%20assume%20that%20if,if%20you%20have%20two%20eyes.&text=But%20studies%20have%20shown%20that,distances%2C%20and%20to%20perceive%20depth.) article by duke health, people who lose sight in one eye have a significant decline in their ability to judge distances and perceive depth. The ability to perceive depth is not completely lost because there are a number of other visual cues that can be used to perceive depth in addition to the knowing the different sizes of objects by memory.
 
-with 2 eyes you can also create the illusion of depth with things like magic eye pictures where you move your face very close to the screen focusing on one point and then moving back until you see depth in the picture, try it out!
+with 2 eyes you can also create the illusion of depth with things like magic eye pictures where you move your face very close to the screen focusing on one point and then moving back until you see depth in the picture, try it out! (It works better on bigger screens)
 
-![../../assets/images/Untitled%205.png](../../assets/images/Untitled%205.png)
+![https://i.redd.it/es28slb9q7061.jpg](https://i.redd.it/es28slb9q7061.jpg)
 
 # Epipolar Geometry
 
