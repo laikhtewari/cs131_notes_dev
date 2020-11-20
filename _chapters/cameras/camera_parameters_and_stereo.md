@@ -51,13 +51,13 @@ Lets say we have the following basic checkerboard texture used for debugging
 
 And our 2D image looks something like this
 
-![../../assets/images/Untitled%201.png](../../assets/images/Untitled%201.png)
+![../../assets/images/Untitled%202.png](../../assets/images/Untitled%202.png)
 
 We can map different points of the texture to the image and find a transformation matrix to transform the 2d image values into 3d values.
 
 **Focus.** Every camera with a lens has a certain depth of view, meaning objects within that depth of view will appear in focus and the further away an object is from that depth of view, the blurrier it gets. Here is an image from the lecture slides that illustrates this very well.
 
-![../../assets/images/Untitled%202.png](../../assets/images/Untitled%202.png)
+
 
 Most camera lenses can change its focal length, giving us results like the one above. Changing the focal point to the plants position makes anything as close as the plant razor sharp and everything else progressively blurrier. The same is true if we change the focal length to where the building is. If we can somehow calculate a numeric value for how blurry a pixel is, we can find out the relative z-distances between each pixel.
 
